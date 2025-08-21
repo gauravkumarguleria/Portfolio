@@ -44,7 +44,7 @@ const Footer = () => {
         </nav>
 
         {/* Social Media Icons - Responsive */}
-        <div className="flex flex-wrap justify-center space-x-4 mt-6">
+        {/* <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             {
               icon: <FaFacebook />,
@@ -77,7 +77,7 @@ const Footer = () => {
               {item.icon}
             </a>
           ))}
-        </div>
+        </div> */}
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
