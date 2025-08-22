@@ -1,5 +1,6 @@
 // Skills Section Logo's
 import aicareer from "./assets/work_logo/ai-career.png";
+import splitr from "./assets/work_logo/splitr.png";
 import htmlLogo from "./assets/tech_logo/html.png";
 import cssLogo from "./assets/tech_logo/css.png";
 import sassLogo from "./assets/tech_logo/sass.png";
@@ -165,5 +166,25 @@ export const projects = [
     ],
     github: "https://github.com/gauravkumarguleria/sensai-2",
     webapp: "https://sensai-2.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "Splitr - AI Splitwise Clone",
+    description:
+      "A full-stack AI-powered expense sharing application that simplifies group expense tracking and settlement. Built with Next.js for a fast and scalable frontend, Tailwind CSS and Shadcn UI for a clean, modern design, and Convex as the backend for real-time data management. The application integrates Gemini AI to provide smart expense insights, automated suggestions for splitting bills, and seamless group collaboration.",
+    image: splitr,
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Next.js",
+      "Tailwind CSS",
+      "Convex",
+      "Gemini AI",
+      "Shadcn UI",
+    ],
+    github: "https://github.com/gauravkumarguleria/Splitwise",
+    webapp: "https://splitwise-2.vercel.app/",
   },
 ];
