@@ -26,7 +26,6 @@ const Work = () => {
           and experience in various technologies
         </p>
       </div>
-
       {/* Projects Grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
@@ -59,13 +58,17 @@ const Work = () => {
                   </span>
                 ))}
               </div>
+              <p className="text-yellow-500 mb-4 pt-4 line-clamp-3 ">
+                <a href={project.webapp} target="_blank">
+                  Click here
+                </a>
+              </p>
             </div>
           </div>
         ))}
       </div>
-
       {/* Modal Container */}
-      {selectedProject && (
+      {/* {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
             <div className="flex justify-end p-4">
@@ -124,7 +127,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 };
