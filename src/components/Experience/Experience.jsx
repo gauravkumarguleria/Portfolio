@@ -67,7 +67,9 @@ const Experience = () => {
                     </h4>
                   </div>
                   {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    {experience.date}
+                  </p>
                 </div>
               </div>
 
@@ -83,6 +85,16 @@ const Experience = () => {
                       {skill}
                     </li>
                   ))}
+
+                  <p className="text-yellow-500 mb-4 pt-4 line-clamp-3 ">
+                    <a
+                      href="https://drive.google.com/file/d/1cS94m-irTwWyX-MRFh-hUS7V8WT86L1g/view?usp=sharing"
+                      target="_blank"
+                      className="hover:text-cyan-400"
+                    >
+                      Click here
+                    </a>
+                  </p>
                 </ul>
               </div>
             </div>

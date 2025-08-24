@@ -43,16 +43,16 @@ const About = () => {
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
             A detail-oriented software developer and MCA candidate specializing
-            in the MERN stack and AI integration. I have practical experience in
-            building and deploying scalable web applications, from optimizing
-            backend performance in a fintech internship to developing full-stack
-            projects with modern tools like Next.js. I am passionate about
-            creating efficient, intelligent solutions that solve real-world
-            problems.
+            in the Full Stack Web Development and AI integration. I have
+            practical experience in building and deploying scalable web
+            applications, from optimizing backend performance to developing
+            full-stack projects with modern tools like Next.js. I am passionate
+            about creating efficient, intelligent solutions that solve
+            real-world problems.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/drive/u/0/folders/1xaUU111LVa0cuPv6AreC89fJ-p6UlI9a"
+            href="https://drive.google.com/file/d/1ynM40xSzfsBUqPgrTR_jJqA77B6wahpd/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

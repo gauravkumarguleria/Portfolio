@@ -59,7 +59,11 @@ const Work = () => {
                 ))}
               </div>
               <p className="text-yellow-500 mb-4 pt-4 line-clamp-3 ">
-                <a href={project.webapp} target="_blank">
+                <a
+                  href={project.webapp}
+                  target="_blank"
+                  className="hover:text-cyan-400"
+                >
                   Click here
                 </a>
               </p>
