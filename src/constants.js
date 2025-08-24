@@ -163,6 +163,7 @@ export const projects = [
       "Tailwind CSS",
       "Prisma",
       "Shadcn UI",
+      "Gemini AI",
     ],
     github: "https://github.com/gauravkumarguleria/sensai-2",
     webapp: "https://sensai-2.vercel.app/",
