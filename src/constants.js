@@ -1,5 +1,6 @@
-// Skills Section Logo's
+// Skills Section Logo's/ Skills Section Logo's
 import aicareer from "./assets/work_logo/ai-career.png";
+import jira from "./assets/work_logo/jira.png";
 import splitr from "./assets/work_logo/splitr.png";
 import htmlLogo from "./assets/tech_logo/html.png";
 import cssLogo from "./assets/tech_logo/css.png";
@@ -187,5 +188,26 @@ export const projects = [
     ],
     github: "https://github.com/gauravkumarguleria/Splitwise",
     webapp: "https://splitwise-2.vercel.app/",
+  },
+
+  {
+    id: 2,
+    title: "Zcrum - JIRA Clone",
+    description:
+      "Zcrum is a full-stack task and project management application inspired by JIRA. Built with Next.js for a fast and scalable frontend, Tailwind CSS and Shadcn UI for a clean, modern design, and Clerk for authentication, it enables users to manage projects, create tasks, assign team members, and track progress in real-time. The backend uses NeonDB for cloud database management, and the project includes a tutorial to help developers understand the implementation of a full-featured JIRA clone with modern web technologies.",
+    image: jira,
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Next.js",
+      "Tailwind CSS",
+      "Clerk",
+      "NeonDB",
+      "Shadcn UI",
+    ],
+    github: "https://github.com/gauravkumarguleria/jira-clone",
+    webapp: "https://jira-clone-2.vercel.app/",
   },
 ];
