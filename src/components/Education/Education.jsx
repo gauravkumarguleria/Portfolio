@@ -59,7 +59,7 @@ const Education = () => {
                 {/* Degree, School Name, and Date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-purple-700 drop-shadow-[2px_2px_0px_#000]">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-purple-700 drop-shadow-[1px_1px_0px_#000]">
                       {edu.degree}
                     </h3>
                     <h4 className="text-md sm:text-lg text-gray-800 font-bold">

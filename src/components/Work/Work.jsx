@@ -24,7 +24,7 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" >
         {projects.map((project) => (
           <div
             key={project.id}
@@ -39,7 +39,7 @@ const Work = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-extrabold text-purple-700 drop-shadow-[2px_2px_0px_#000] mb-2">
+              <h3 className="text-2xl font-extrabold text-purple-700 drop-shadow-[1px_1px_0px_#000] mb-2">
                 {project.title}
               </h3>
               <p className="text-gray-700 mb-4 pt-4 line-clamp-3 bg-white px-3 py-2 rounded-xl border-4 border-black shadow-[3px_3px_0px_#000]">

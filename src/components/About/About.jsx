@@ -62,7 +62,7 @@ const About = () => {
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[28rem] md:h-[28rem] border-4 border-black rounded-full bg-yellow-200 shadow-[8px_8px_0px_#000] p-2"
+            className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-[28rem] md:h-[28rem] bg-yellow-100 border-4 border-black rounded-full shadow-[8px_8px_0px_#000] p-3"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
@@ -75,6 +75,7 @@ const About = () => {
               alt="Gaurav Kumar Guleria"
               className="w-full h-full rounded-full object-cover border-4 border-black"
             />
+            {/* Bubble Tail */}
           </Tilt>
         </div>
       </div>
