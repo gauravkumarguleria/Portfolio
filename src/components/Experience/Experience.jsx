@@ -5,97 +5,104 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 px-[7vw] lg:px-[12vw] font-sans bg-gradient-to-br from-yellow-100 via-pink-100 to-purple-100 rounded-[2rem] border-4 border-black shadow-[8px_8px_0px_#000]"
     >
       {/* Section Title */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+      <div className="text-center mb-20">
+        <h2 className="text-5xl font-extrabold text-purple-700 drop-shadow-[3px_3px_0px_#000] inline-block bg-yellow-200 px-6 py-2 rounded-2xl border-4 border-black shadow-[5px_5px_0px_#000]">
+          💼 EXPERIENCE
+        </h2>
+        <p className="text-gray-800 mt-6 text-lg sm:text-xl font-medium max-w-2xl mx-auto bg-white px-6 py-4 rounded-2xl border-4 border-black shadow-[4px_4px_0px_#000]">
           A collection of my work experience and the roles I have taken in
-          various organizations
+          various organizations 🚀
         </p>
       </div>
 
       {/* Experience Timeline */}
       <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
+        {/* Vertical Line (cartoon-style dashed line) */}
+        <div className="absolute sm:left-1/2 left-4 transform -translate-x-1/2 w-2 h-full border-l-4 border-black border-dashed"></div>
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${
+            className={`flex flex-col sm:flex-row items-center mb-20 ${
               index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
             }`}
           >
             {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute sm:left-1/2 left-4 transform -translate-x-1/2 bg-yellow-200 border-4 border-black w-16 h-16 sm:w-20 sm:h-20 rounded-full flex justify-center items-center shadow-[5px_5px_0px_#000] z-10">
               <img
                 src={experience.img}
                 alt={experience.company}
-                className="w-full h-full object-cover rounded-full"
+                className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-full border-2 border-black"
               />
             </div>
 
-            {/* Content Section */}
+            {/* Content Card */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              className={`w-full sm:max-w-md p-6 sm:p-8 rounded-2xl border-4 border-black bg-pink-100 shadow-[6px_6px_0px_#000] transition-transform duration-300 hover:-translate-y-2 ${
+                index % 2 === 0 ? "sm:ml-44" : "sm:mr-44"
+              } mt-20 sm:mt-0`}
             >
-              {/* Flex container for image and text */}
+              {/* Company Info */}
               <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                {/* Logo */}
+                <div className="w-16 h-16 bg-white rounded-xl border-4 border-black shadow-[3px_3px_0px_#000] flex items-center justify-center">
                   <img
                     src={experience.img}
                     alt={experience.company}
-                    className="w-full h-full object-cover"
+                    className="w-12 h-12 object-cover rounded-md"
                   />
                 </div>
 
-                {/* Role, Company Name, and Date */}
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                      {experience.role}
-                    </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
-                      {experience.company}
-                    </h4>
-                  </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">
-                    {experience.date}
+                {/* Role + Company */}
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-extrabold text-purple-700 drop-shadow-[2px_2px_0px_#000]">
+                    {experience.role}
+                  </h3>
+                  <h4 className="text-md sm:text-lg text-gray-800 font-bold">
+                    {experience.company}
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    📅 {experience.date}
                   </p>
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
-              <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
-                <ul className="flex flex-wrap mt-2">
+              {/* Description */}
+              <p className="mt-6 text-gray-700 bg-white px-4 py-3 rounded-xl border-4 border-black shadow-[3px_3px_0px_#000]">
+                {experience.desc}
+              </p>
+
+              {/* Skills */}
+              <div className="mt-6">
+                <h5 className="font-extrabold text-purple-800 mb-2">
+                  ⚡ Skills:
+                </h5>
+                <ul className="flex flex-wrap">
                   {experience.skills.map((skill, index) => (
                     <li
                       key={index}
-                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
+                      className="bg-yellow-200 text-black px-4 py-2 text-sm rounded-xl border-4 border-black mr-2 mb-2 shadow-[2px_2px_0px_#000] hover:bg-yellow-300 transition"
                     >
                       {skill}
                     </li>
                   ))}
-
-                  <p className="text-yellow-500 mb-4 pt-4 line-clamp-3 ">
-                    <a
-                      href="https://drive.google.com/file/d/1cS94m-irTwWyX-MRFh-hUS7V8WT86L1g/view?usp=sharing"
-                      target="_blank"
-                      className="hover:text-cyan-400"
-                    >
-                      Click here
-                    </a>
-                  </p>
                 </ul>
+
+                {/* Click Here Link */}
+                <p className="mt-4 text-center">
+                  <a
+                    href="https://drive.google.com/file/d/1cS94m-irTwWyX-MRFh-hUS7V8WT86L1g/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-pink-600 font-bold underline hover:text-purple-700"
+                  >
+                    👉 Click here
+                  </a>
+                </p>
               </div>
             </div>
           </div>
