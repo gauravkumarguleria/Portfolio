@@ -63,7 +63,7 @@ const Contact = () => {
       {/* Contact Form */}
       <div className="w-full max-w-md bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 p-6 rounded-[2rem] border-4 border-black shadow-[8px_8px_0px_#000]">
         {/* Title */}
-        <h2 className="text-4xl font-extrabold text-purple-700 text-center drop-shadow-[3px_3px_0px_#000] mb-6">
+        <h2 className="text-4xl font-extrabold text-purple-700 text-center drop-shadow-[1px_1px_0px_#000] mb-6">
           Contact Me 🎨
         </h2>
 

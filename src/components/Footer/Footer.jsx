@@ -45,7 +45,7 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex flex-wrap justify-center space-x-4 mb-6">
-          {[
+          {/* {[
             {
               icon: <FaFacebook />,
               link: "https://www.facebook.com/",
@@ -76,7 +76,7 @@ const Footer = () => {
             >
               {item.icon}
             </a>
-          ))}
+          ))} */}
         </div>
 
         {/* Copyright Text */}
