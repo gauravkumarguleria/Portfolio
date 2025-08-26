@@ -11,7 +11,7 @@ import BlurBlob from "./components/BlurBlob";
 
 const App = () => {
   return (
-    <div className=" bg-gradient-to-r from-yellow-100 via-pink-100 to-purple-100 shadow-[4px_4px_0px_#000] border-b-4 border-black">
+    <div className=" bg-gradient-to-r from-yellow-100 via-pink-100 to-purple-100 shadow-[2px_2px_0px_#000] border-b-4 border-black">
       {/* Cartoon Blobs */}
       <BlurBlob
         position={{ top: "2=0%", left: "15%" }}

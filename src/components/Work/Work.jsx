@@ -24,7 +24,7 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" >
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -74,16 +74,15 @@ const Work = () => {
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
           <div className="bg-yellow-200 rounded-[2rem] border-4 border-black shadow-[8px_8px_0px_#000] lg:w-2/3 w-full max-w-3xl overflow-hidden relative animate-[pop_0.3s_ease-in-out]">
-            <div className="flex justify-end p-4">
-              <button
-                onClick={handleCloseModal}
-                className="text-purple-700 font-extrabold text-3xl hover:text-pink-600"
-              >
-                &times;
-              </button>
-            </div>
+            {/* Close Button - Floating Top Right */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-4 right-4 bg-white w-10 h-10 flex items-center justify-center rounded-full border-4 border-black shadow-[3px_3px_0px_#000] text-purple-700 font-extrabold text-2xl hover:bg-pink-200 transition-transform transform hover:scale-110"
+            >
+              &times;
+            </button>
 
-            <div className="flex flex-col items-center px-6 pb-6">
+            <div className="flex flex-col items-center px-6 pb-6 pt-12">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
