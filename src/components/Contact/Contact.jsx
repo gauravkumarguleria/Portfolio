@@ -58,7 +58,7 @@ const Contact = () => {
           questions! 🎨
         </p>
       </div>
-      ;{/* Toast Container */}
+      {/* Toast Container */}
       <ToastContainer />
       {/* Contact Form */}
       <div className="w-full max-w-md bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 p-6 rounded-[2rem] border-4 border-black shadow-[8px_8px_0px_#000]">
